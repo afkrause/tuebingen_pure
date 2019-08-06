@@ -28,9 +28,9 @@
 */
 
 #ifdef _DEBUG
-#pragma comment(lib, "opencv_world401d.lib")
+#pragma comment(lib, "/opencv41/build/x64/vc15/lib/opencv_world411d.lib")
 #else
-#pragma comment(lib, "opencv_world401.lib")
+#pragma comment(lib, "/opencv41/build/x64/vc15/lib/opencv_world411.lib")
 #endif
 
 using namespace std;
@@ -182,8 +182,8 @@ int main(int argc, const char** argv)
 
 	setUseOptimized(true);
 
-	lpw_test_all();
-	//run_webcam();
+	//lpw_test_all();
+	run_webcam();
 	return 1;
 }
 
